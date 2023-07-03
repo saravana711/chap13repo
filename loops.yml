@@ -1,0 +1,16 @@
+---
+- hosts: 172.31.5.245
+  become: yes
+  tasks:
+  - name: Install multiple application
+    apt:
+     name: "{{item}}"
+     state: present
+    loop:
+     - git
+     - python
+     - wget
+     - python3
+     - gnome-ches
+     - rythmbox
+  
