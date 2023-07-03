@@ -8,7 +8,7 @@
 
    - name: this is the result for the command
      debug: 
-     msg: "{{myresults}}"
+       msg: "{{myresults}}"
 
    - name: install tree
      apt:
