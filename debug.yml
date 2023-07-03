@@ -10,9 +10,9 @@
      debug: 
        msg: "{{myresults}}"
 
-   - name: install tree
+   - name: install python
      apt:
-       name: tree
+       name: python
        state: present
 
    - name: Install the web server
