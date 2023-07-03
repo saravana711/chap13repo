@@ -11,6 +11,6 @@
      - python
      - wget
      - python3
-     - gnome-ches
-     - rythmbox
+     - gnome-chess
+     - rhythmbox
   
