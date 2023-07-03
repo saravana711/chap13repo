@@ -1,0 +1,25 @@
+---
+- hosts: 172.31.5.245
+  become: yes
+  tasks:
+   - name: install apache2
+     apt:
+      name: apache2
+      state: present
+     tags: myapache2
+   - name: install tree
+     apt:
+      name: tree
+      state: present
+     tags: mytree
+   - name: install wget
+     apt:
+      name: wget
+      state: present
+     tags: mywget
+   - name: install python
+     apt:
+      name: python
+      state: present
+     tags: mypython    
+
