@@ -17,6 +17,5 @@
 
    - name: Install the web server
      apt:
-       name: "{{ubuntuwebserver}}"
-       state: present
-       when: myresults.stderr == ""
+      name: "{{ubuntuwebserver}}"
+      state: present
