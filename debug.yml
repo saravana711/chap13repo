@@ -16,8 +16,7 @@
        state: present
        when: myresults.stderr !==""
 
-   - name: Install apache2
-     apt: 
-       name: apache2
-       state: present 
-    #   when: myresults.stderr ==""
+   - name: Install the web server
+     apt:
+      name: apache2
+      state: present
