@@ -2,7 +2,4 @@
 - hosts: webservers
   become: yes
   tasks:
-  - name: Create a file
-    file:
-     name: /home/ubuntu/testfile
-     state: touch
+  - include_tasks: myfile.yml
