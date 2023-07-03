@@ -17,7 +17,7 @@
        when: myresults.stderr !==""
 
    - name: Install the web server
-     apt:
+     yum:
       name: apache2
       state: present
       when: myresults.stderr ==""
