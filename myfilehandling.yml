@@ -9,3 +9,6 @@
      src: staticfile
      dest: /home/ubuntu/mystaticfile
 
+
+  - include_tasks: webservers.yml
+  
