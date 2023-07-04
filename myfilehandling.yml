@@ -13,7 +13,7 @@
   - name: copy the Dynamic file
     template: 
       src: index.j2
-      dest: /vars/www/html/index.html
+      dest: /var/www/html/index.html
 
 
   
