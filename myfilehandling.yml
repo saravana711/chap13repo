@@ -14,12 +14,18 @@
     template: 
       src: index.j2
       dest: /var/www/html/index.html
+    notify:  Restartthewebserver 
 
   - name: Remote File download
     get_url:
       url: https://www.java.com/en/download/JavaSetup8u371.exe
       dest: /home/ubuntu/JavaSetup8u371.exe
       force_basic_auth: yes 
+  handlers: 
+  - name: Restartthewebserver
+    systemd:
+      name: apache2
+      state: restarted
 
   
 
