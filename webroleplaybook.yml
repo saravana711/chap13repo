@@ -1,5 +1,5 @@
 ---
-- hosts: 172.31.11.85
+- hosts: webservers
   become: yes       
   roles:
    - webrole
