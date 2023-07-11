@@ -15,4 +15,4 @@
     name: wget
     state: present
 
-- include_tasks: myfile.yml
+- include_tasks: java.yml
