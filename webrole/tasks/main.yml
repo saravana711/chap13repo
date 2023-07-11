@@ -4,3 +4,8 @@
   apt:
     name: apache2
     state: present
+
+- name: Install the tree
+  apt: 
+    name: tree
+    state: present
