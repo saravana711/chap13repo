@@ -1,6 +1,6 @@
 ---
 # tasks file for webrole
-- include_tasks: tags.yml
+- include_tasks: myfile.yml
 #- name: i Want to install Web server
   apt:
     name: apache2
