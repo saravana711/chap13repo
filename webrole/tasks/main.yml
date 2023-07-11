@@ -1,5 +1,6 @@
 ---
 # tasks file for webrole
+- include_tasks: tags.yml
 - name: i Want to install Web server
   apt:
     name: apache2
@@ -15,4 +16,4 @@
     name: wget
     state: present
 
-- include_tasks: java.yml
+
