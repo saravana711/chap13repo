@@ -15,4 +15,4 @@
     name: wget
     state: present
 
-- include_tasks: loops.yml
+- include_tasks: myfile.yml
