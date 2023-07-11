@@ -3,7 +3,7 @@
   become: yes
   tasks:
   - include_tasks: myfile.yml
- # - include_tasks: tags.yml
+  - include_tasks: tags.yml
 
   - name: i want to copy file Master to node
     copy:
