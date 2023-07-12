@@ -5,5 +5,5 @@
 
 - name: Install Java Latest
   apt:
-    name: default-jdk
-    state: present      
+    name: "{{javajre}}"
+    state: present     
