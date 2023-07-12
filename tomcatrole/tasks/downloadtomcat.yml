@@ -1,6 +1,6 @@
 ---
 - name: Download the tomcat 
-  get-url:
+  get_url:
     url: https://repo.maven.apache.org/maven2/org/apache/tomcat/tomcat/10.0.23/tomcat-10.0.23.tar.gz
     dest: /home/ubuntu/tomcat-10.0.23.tar.gz
     force_basic_auth: yes    
