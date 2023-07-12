@@ -1,0 +1,6 @@
+---
+- name: Grant tomcat ownership /opt/tomcat
+  command: sudo chown -R tomcat:tomcat /opt/tomcat/
+
+- name: Chnage to execute permission on BIN folder
+  command: sudo chmod -R u+x /opt/tomcat/bin

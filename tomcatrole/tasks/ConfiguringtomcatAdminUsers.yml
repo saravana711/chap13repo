@@ -1,0 +1,15 @@
+---
+- name: Configuring tomcat Admi Users:copy user xml file into nodes
+  template: 
+    src: templates/tomuser.j2
+    dest: /opt/tomcat/conf/tomcat-users.xml
+
+- name: copy the tomcat contest files in to nodes
+  template:
+    src: templates/tomcontext.j2
+    dest: /opt/tomcat/webapps/manager/META-INF/context.xml   
+
+- name: copy the tomcat host context files in to nodes
+  template:
+    src: templates/tomhostcontext.j2
+    dest: /opt/tomcat/webapps/host-manager/META-INF/context.xml 
